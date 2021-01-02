@@ -1,0 +1,196 @@
+{
+  "data": {
+    "LT": {
+      "help": {
+        "commands": {
+          "name": "Komandos",
+          "value": "`.help` _**›**_ *Komandų sąrašas.*\n`.admin` _**›**_ *Administracijos komandų sąrašas.*\n`.about` _**›**_ *Apie Origin botą.*\n`.private` _**›**_ *Privačių pluginų sąrašas.*"
+        },
+        "server": {
+          "name": "Serverio komandos",
+          "value": "`.server` _**›**_ *Discordo serverio informacija.*"
+        },
+        "organizer": {
+          "name": "Event komandos",
+          "value": "`.events` _**›**_ *Eventų sąrašas.*"
+        },
+        "xp_tracker": {
+          "name": "XP Event komandos",
+          "value": "`.axp` _**›**_ *Registracija.*\n`.xpupdate` _**›**_ *XP atnaujinimas.*\n`.xpstats` _**›**_ *Topų sąrašas.*\n`.xprank` _**›**_ *Mano rankas.*"
+        },
+        "kc_tracker": {
+          "name": "KC Event komandos",
+          "value": "`.akc` _**›**_ *Registracija.*\n`.kcupdate` _**›**_ *KC atnaujinimas.*\n`.kcstats` _**›**_ *Topų sąrašas.*\n`.kcrank` _**›**_ *Mano rankas.*"
+        },
+        "dc_bank": {
+          "name": "Banko komandos",
+          "value": "`.create` _**›**_ *Discordo banko saskaitos sukūrimas.*\n`.bank` _**›**_ *Mano discordo banko sąskaita.*\n`.donate` _**›**_ *Sponsoriavimas.*\n`.banktop` _**›**_ *Top sponsorių sąrašas.*\n`.dcbank` _**›**_ *Discordo banko sąskaita.*\n`.recipe` _**›**_ *Discordo banko išrašai.*"
+        },
+        "rsn_register": {
+          "name": "Rsn komandos",
+          "value": "`.rsn` _**›**_ *Runescape nickname registracija.*"
+        },
+        "vote": {
+          "name": "Votemute komandos",
+          "value": "`.votemute` _**›**_ *Votemute paskelbimas.*"
+        }
+      },
+      "admin": {
+        "commands": {
+          "name": "Komandos",
+          "value": "`.help` _**›**_ *Komandų sąrašas.*\n`.admin` _**›**_ *Administracijos komandų sąrašas.*\n`.about` _**›**_ *Apie Origin botą.*\n`.private` _**›**_ *Privačių pluginų sąrašas.*"
+        },
+        "admin": {
+          "name": "Admin komandos",
+          "value": "`.addorganizer` _**›**_ _**(SS)**_ *Organizatoriaus registravimas*\n`.addadmin` _**›**_ _**(SS)**_ *Administratoriaus registravimas.*\n`.addaccountant` _**›**_ _**(SS)**_ *Buhalterio registravimas.*\n`.remu` _**›**_ _**(SS)**_ *Privilegijų nuėmimas.*\n`.mute` _**›**_ _**(SA)**_ *Užmutinimas.*\n`.unmute` _**›**_ _**(SA)**_ *Atmutinimas.*\n`.showmember` _**›**_ _**(SA)**_ *Nario informacija.*\n`.post` _**›**_ _**(SA)**_ *Oficialus pranešimas.*"
+        },
+        "server": {
+          "name": "Serverio komandos",
+          "value": "`.status` _**›**_ _**(SB)**_ *Boto konfigūracija.*"
+        },
+        "organizer": {
+          "name": "Event komandos",
+          "value": "`.organize` _**›**_ _**(SO)**_ *Evento sukūrimas.*\n`.remove` _**›**_ _**(SO)**_ *Evento pašalinimas.*"
+        },
+        "xp_tracker": {
+          "name": "XP Event komandos",
+          "value": "`.xptracker` _**›**_ _**(SO)**_ *XP evento sukūrimas.*"
+        },
+        "kc_tracker": {
+          "name": "KC Event komandos",
+          "value": "`.kctracker` _**›**_ _**(SO)**_ *KC evento sukūrimas.*"
+        },
+        "dc_bank": {
+          "name": "Banko komandos",
+          "value": "`.remote` _**›**_ _**(SB)**_ *Nario discordo banko saskaitos sukūrimas.*\n`.pay` _**›**_ _**(SB)**_ *GP perverdimas į nario discordo banko sąskaitą.*\n`.minus` _**›**_ _**(SB)**_ *Sumos atėmimas nuo discordo banko sąskaitos.*\n`.plus` _**›**_ _**(SB)**_ *Sumos pridėjimas į discordo banko sąskaita.*\n`.bankdata` _**›**_ _**(SB)**_ *Nario discordo banko sąskaita.*"
+        },
+        "rsn_register": {
+          "name": "Rsn komandos",
+          "value": "`.checkrsn` _**›**_ _**(SA)**_ *Nario runescape nickname sąrašas.*"
+        },
+        "special1": {
+          "name": "(SS) Serverio savininkas",
+          "value": "{}"
+        },
+        "special2": {
+          "name": "(SB) Buhalterija",
+          "value": "{}"
+        },
+        "special3": {
+          "name": "(SA) Administracija",
+          "value": "{}"
+        },
+        "special4": {
+          "name": "(SO) Eventų organizatoriai",
+          "value": "{}"
+        }
+      },
+      "about": {
+        "1": {
+          "name": "Origin aprašymas \uD83D\uDCE1",
+          "value": "*Origin - tai discordo botas turintis platų funkcionalumą, kuris suteikia discordo administracijai organizuoti XP, KC, PVM, PK eventus ir turėti discordo serverio banko sąskaitą.*"
+        },
+        "2": {
+          "name": "Papildoma informacija \uD83D\uDCDD",
+          "value": "*Programuotojas* _**›**_ <@!566292177161027586>\n*Origin discordo nuoroda* _**›**_ [Spausti čia](https://discord.gg/MsjUymJ9pp)\n*Origin prijungimo nuoroda* _**›**_ [Spausti čia](https://discord.com/api/oauth2/authorize?client_id=747076703297339423&permissions=8&scope=bot)"
+        }
+      }
+    },
+    "EN": {
+      "help": {
+        "commands": {
+          "name": "Commands",
+          "value": "`.help` _**›**_ *Command list.*\n`.admin` _**›**_ *List of administration commands.*\n`.about` _**›**_ *About Origin.*\n`.private` _**›**_ *List of private plugins.*"
+        },
+        "server": {
+          "name": "Server commands",
+          "value": "`.server` _**›**_ *Discord server information.*"
+        },
+        "organizer": {
+          "name": "Event commands",
+          "value": "`.events` _**›**_ *List of events.*"
+        },
+        "xp_tracker": {
+          "name": "XP Event commands",
+          "value": "`.axp` _**›**_ *Registration.*\n`.xpupdate` _**›**_ *XP update.*\n`.xpstats` _**›**_ *Top list.*\n`.xprank` _**›**_ *My rank.*"
+        },
+        "kc_tracker": {
+          "name": "KC Event commands",
+          "value": "`.akc` _**›**_ *Registration.*\n`.kcupdate` _**›**_ *KC update.*\n`.kcstats` _**›**_ *Top list.*\n`.kcrank` _**›**_ *My rank.*"
+        },
+        "dc_bank": {
+          "name": "Bank commands",
+          "value": "`.create` _**›**_ *Creating a discord bank account.*\n`.bank` _**›**_ *My discordo bank account.*\n`.donate` _**›**_ *Donate.*\n`.banktop` _**›**_ *Top sponsors list.*\n`.dcbank` _**›**_ *Discord bank account.*\n`.recipe` _**›**_ *Discord bank recipes.*"
+        },
+        "rsn_register": {
+          "name": "Rsn commands",
+          "value": "`.rsn` _**›**_ *Runescape nickname registration.*"
+        },
+        "vote": {
+          "name": "Votemute commands",
+          "value": "`.votemute` _**›**_ *Votemute poll.*"
+        }
+      },
+      "admin": {
+        "commands": {
+          "name": "Commands",
+          "value": "`.help` _**›**_ *Command list.*\n`.admin` _**›**_ *List of administration commands.*\n`.about` _**›**_ *About Origin.*\n`.private` _**›**_ *Private plugin list.*"
+        },
+        "admin": {
+          "name": "Admin commands",
+          "value": "`.addorganizer` _**›**_ _**(SS)**_ *Organizer registration*\n`.addadmin` _**›**_ _**(SS)**_ *Administrator registration.*\n`.addaccountant` _**›**_ _**(SS)**_ *Accountant registration.*\n`.remu` _**›**_ _**(SS)**_ *Remove privileges.*\n`.mute` _**›**_ _**(SA)**_ *Mute.*\n`.unmute` _**›**_ _**(SA)**_ *Unmute.*\n`.showmember` _**›**_ _**(SA)**_ *Member information.*\n`.post` _**›**_ _**(SA)**_ *Official announcement.*"
+        },
+        "server": {
+          "name": "Server commands",
+          "value": "`.status` _**›**_ _**(SB)**_ *Bot configuration.*"
+        },
+        "organizer": {
+          "name": "Event commands",
+          "value": "`.organize` _**›**_ _**(SO)**_ *Creating an event.*\n`.remove` _**›**_ _**(SO)**_ *Event removal.*"
+        },
+        "xp_tracker": {
+          "name": "XP Event commands",
+          "value": "`.xptracker` _**›**_ _**(SO)**_ *XP event creation.*"
+        },
+        "kc_tracker": {
+          "name": "KC Event commands",
+          "value": "`.kctracker` _**›**_ _**(SO)**_ *KC event creation*"
+        },
+        "dc_bank": {
+          "name": "Bank commands",
+          "value": "`.remote` _**›**_ _**(SB)**_ *Create to member a discord bank account.*\n`.pay` _**›**_ _**(SB)**_ *Transfer GP to member discord bank account.*\n`.minus` _**›**_ _**(SB)**_ *Deduction GP from the discord bank account.*\n`.plus` _**›**_ _**(SB)**_ *Adding GP to a discord bank account.*\n`.bankdata` _**›**_ _**(SB)**_ *Member discord bank account.*"
+        },
+        "rsn_register": {
+          "name": "Rsn commands",
+          "value": "`.checkrsn` _**›**_ _**(SA)**_ *Member runescape nickname list.*"
+        },
+        "special1": {
+          "name": "(SS) Server owner",
+          "value": "{}"
+        },
+        "special2": {
+          "name": "(SB) Accounting",
+          "value": "{}"
+        },
+        "special3": {
+          "name": "(SA) Administration",
+          "value": "{}"
+        },
+        "special4": {
+          "name": "(SO) Event organizers",
+          "value": "{}"
+        }
+      },
+      "about": {
+        "1": {
+          "name": "Origin description \uD83D\uDCE1",
+          "value": "*Origin is a discord bot with a wide range of functionality that allows the discord administration to organize XP, KC, PVM, PK events and have a discord server bank account.*"
+        },
+        "2": {
+          "name": "Additional information \uD83D\uDCDD",
+          "value": "*Developer* _**›**_ <@!566292177161027586>\n*Origin discord link* _**›**_ [Click here](https://discord.gg/DM2qZKuvn6)\n*Origin add link* _**›**_ [Click here](https://discord.com/api/oauth2/authorize?client_id=747076703297339423&permissions=8&scope=bot)"
+        }
+      }
+    }
+  }
+}

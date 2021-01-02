@@ -1,0 +1,192 @@
+{
+  "data": {
+    "LT": {
+      "xp_tracker": {
+        "autostats": {
+          "1": {
+            "name": "Evento informacija",
+            "value": "*Žaidėjas gali užsiregistuori į XP eventa rašydamas komandą `.axp`. Žaidėjas gali atnaujinti savo XP rašydamas komandą `.xpupdate`. Pirmos 6 valandos nuo evento starto pradžios yra moderuojamos boto. Jei žaidėjas atsijungs nuo žaidimo jau prasidėjus XP eventui ir XP per valandą viršis XP skaičių nustatyta boto sistemoje, žaidėjo statistika bus anuliuota automatiškai. Žaidėjas pasikeitęs RSN evento metu, nebus moderuojamas boto. _**[DĖMESIO]**_ Šešios valandos nuo pradžios ir iki XP evento pabaigos, botas atnaujina XP automatiškai. Oficialus old school runescape hiscorės įtakoja XP registravimą ir atvaizdavimą discordo serveryje. Jei oficialus old school runescape hiscorės netinkamai veikia, botas negalės atvaizduoti žaidėjo aktualaus pakelto XP.*"
+          },
+          "2": {
+            "name": "Event komandos",
+            "value": "*Norint užsiregistruoti į eventa, rašykite komandą* `.axp`\n*Norint atnaujinti XP rankiniu būdu, rašykite komandą* `.xpupdate`\n*Norint pasižiurėti evento topus, rašykite komandą* `.xpstats`\n*Norint sužinoti savo ranką, rašykite komandą* `.xprank`"
+          }
+        },
+        "tracker": {
+          "1": {
+            "name": "Generatorius",
+            "value": "[Spausti čia.](https://origin.clan.su/generator.html)\n*Minutės ir metai neturi jokios reikšmės.*"
+          },
+          "2": {
+            "name": "Papildoma informacija",
+            "value": "**std** _**›**_ *Standartinis xp eventas.*\n**rush** _**›**_ *Rush xp eventas. Laimi žaidėjas, kuris pasiekia nustatyta evento xp skaičių.*\n\n:first_place:vieta 25m - :second_place:vieta 10m - :third_place:vieta 5m."
+          }
+        },
+        "addevent": {
+          "1": {
+            "name": "Papildoma informacija",
+            "value": "{}"
+          },
+          "2": {
+            "name": "Event komandos",
+            "value": "*Norint užsiregistruoti į eventą, rašykite komandą* `.axp`\n*Norint atnaujinti XP rankiniu būdu, rašykite komandą* `.xpupdate`\n*Norint sužinoti savo ranką, rašykite komandą* `.xprank`\n*Norint sužinoti šios savaitės organizuojamų eventų sąrašą, rašykite komandą* `.events`"
+          }
+        },
+        "stats": {
+          "1": {
+            "name": "{}",
+            "value": "{}"
+          },
+          "2": {
+            "name": "Papildoma informacija",
+            "value": "*Topai atsinaujina kas* _**60**_ *minučių*."
+          },
+          "3": {
+            "name": "Event komandos",
+            "value": "*Norint pasižiurėti evento topus, rašykite komandą* `.xpstats`\n*Norint sužinoti savo ranką, rašykite komandą* `.xprank`"
+          }
+        }
+      },
+      "kc_tracker": {
+        "autostats": {
+          "1": {
+            "name": "Evento informacija",
+            "value": "*Žaidėjas gali užsiregistuori į KC eventa rašydamas komandą `.akc`. Žaidėjas gali atnaujinti savo KC rašydamas komandą `.kcupdate`. Pirmos 6 valandos nuo evento starto pradžios yra moderuojamos boto. Jei žaidėjas atsijungs nuo žaidimo jau prasidėjus KC eventui ir KC per valandą viršis KC skaičių nustatyta boto sistemoje, žaidėjo statistika bus anuliuota automatiškai. Žaidėjas pasikeitęs RSN evento metu, nebus moderuojamas boto. _**[DĖMESIO]**_ Šešios valandos nuo pradžios ir iki KC evento pabaigos, botas atnaujina KC automatiškai. Oficialus old school runescape hiscorės įtakoja KC registravimą ir atvaizdavimą discordo serveryje. Jei oficialus old school runescape hiscorės netinkamai veikia, botas negalės atvaizduoti žaidėjo aktualaus surinkto KC. Jei žaidėjo boss kc old school runescape hiscorėse yra mažiau nei 50+, botas statistikoje rodis 0 po kol nebus surinkti 50+ boso kc.*"
+          },
+          "2": {
+            "name": "Event komandos",
+            "value": "*Norint užsiregistruoti į eventa, rašykite komandą* `.akc`\n*Norint atnaujinti KC rankiniu būdu, rašykite komandą* `.kcupdate`\n*Norint pasižiurėti evento topus, rašykite komandą* `.kcstats`\n*Norint sužinoti savo ranką, rašykite komandą* `.kcrank`"
+          }
+        },
+        "tracker": {
+          "1": {
+            "name": "Generatorius",
+            "value": "[Spausti čia.](https://origin.clan.su/generator.html)\n*Minutės ir metai neturi jokios reikšmės.*"
+          },
+          "2": {
+            "name": "Papildoma informacija",
+            "value": "**std** _**›**_ *Standartinis kc eventas.*\n**rush** _**›**_ *Rush kc eventas. Laimi žaidėjas, kuris pasiekia nustatyta evento kc skaičių.*\n\n:first_place:vieta 25m - :second_place:vieta 10m - :third_place:vieta 5m."
+          }
+        },
+        "addevent": {
+          "1": {
+            "name": "Papildoma informacija",
+            "value": "{}"
+          },
+          "2": {
+            "name": "Event komandos",
+            "value": "*Norint užsiregistruoti į eventą, rašykite komandą* `.akc`\n*Norint atnaujinti KC rankiniu būdu, rašykite komandą* `.kcupdate`\n*Norint sužinoti savo ranką, rašykite komandą* `.kcrank`\n*Norint sužinoti šios savaitės organizuojamų eventų sąrašą, rašykite komandą* `.events`"
+          }
+        },
+        "stats": {
+          "1": {
+            "name": "{}",
+            "value": "{}"
+          },
+          "2": {
+            "name": "Papildoma informacija",
+            "value": "*Topai atsinaujina kas* _**60**_ *minučių*."
+          },
+          "3": {
+            "name": "Event komandos",
+            "value": "*Norint pasižiurėti evento topus, rašykite komandą* `.kcstats`\n*Norint sužinoti savo ranką, rašykite komandą* `.kcrank`"
+          }
+        }
+      }
+    },
+    "EN": {
+      "xp_tracker": {
+        "autostats": {
+          "1": {
+            "name": "Event information",
+            "value": "*The player can register for the XP event by typing the command `.axp`. The player can upgrade their XP by typing the command `.xpupdate`. The first 6 hours after the start of the event are moderated by the bot. If a player disconnects from the game after the start of an XP event and XP exceeds the number of XP set in the bot system per hour, the player's stats will be canceled automatically. A player changed RSN during the event will not be moderated by the bot. _**ATTENTION** _ Six hours from the start and until the end of the XP event, the bot updates XP automatically. The official old school runescape hiscores affect the registration and display of XP on a discord server. If the official old school runescape hiscores are not working properly, the bot will not be able to display the player's current raised XP.*"
+          },
+          "2": {
+            "name": "Event commands",
+            "value": "*To register for the event, type the command* `.axp`\n*To update your XP manually, type* `.xpupdate`\n*To see list of event top players, type* `.xpstats`\n*To find out your rank, type the command* `.xprank`"
+          }
+        },
+        "tracker": {
+          "1": {
+            "name": "Generator",
+            "value": "[Click here.](https://origin.clan.su/generator.html)\n*Minutes and years do not matter.*"
+          },
+          "2": {
+            "name": "Additional information",
+            "value": "**std** _**›**_ *Standard xp event.*\n**rush** _**›**_ *Rush xp event. The player who reaches the set xp number of the event wins.*\n\n:first_place:place 25m - :second_place:place 10m - :third_place:place 5m."
+          }
+        },
+        "addevent": {
+          "1": {
+            "name": "Additional information",
+            "value": "{}"
+          },
+          "2": {
+            "name": "Event commands",
+            "value": "*To register for the event, type the command* `.axp`\n*To update your XP manually, type the command* `.xpupdate`\n*To find out your rank, type the command* `.xprank`\n*For a list of events this week, type the command* `.events`"
+          }
+        },
+        "stats": {
+          "1": {
+            "name": "{}",
+            "value": "{}"
+          },
+          "2": {
+            "name": "Additional information",
+            "value": "*Top list are updated every* _**60**_ *minutes*."
+          },
+          "3": {
+            "name": "Event commands",
+            "value": "*To see list of event top players, type* `.xpstats`\n*To find out your rank, type the command* `.xprank`"
+          }
+        }
+      },
+      "kc_tracker": {
+        "autostats": {
+          "1": {
+            "name": "Event information",
+            "value": "*The player can register for the KC event by typing the command `.akc`. The player can update his KC by typing the command `.kcupdate`. The first 6 hours after the start of the event are moderated by the bot. If a player disconnects from the game after the start of the KC event and the KC exceeds the number of KC set in the bot system per hour, the player's statistics will be reseted automatically. A player changed RSN during the event will not be moderated by the bot. _**ATTENTION**_ Six hours from the start and until the end of the KC event, the bot updates the KC automatically. Official old school runescape hiscores affect KC registration and display on the discord server. If the official old school runescape hiscores are not working properly, the bot will not be able to display the player's current collected KC. If a player's boss kc is less than 50+ in old school runescape hiscores, the bot will show 0 in the statistics until 50+ boss kc are collected.*"
+          },
+          "2": {
+            "name": "Event commands",
+            "value": "*To register for the event, type the command* `.akc`\n*To update your KC manually, type* `.kcupdate`\n*To see list of event top players, type* `.kcstats`\n*To find out your rank, type the command* `.kcrank`"
+          }
+        },
+        "tracker": {
+          "1": {
+            "name": "Generator",
+            "value": "[Click here.](https://origin.clan.su/generator.html)\n*Minutes and years do not matter.*"
+          },
+          "2": {
+            "name": "Additional information",
+            "value": "**std** _**›**_ *Standard kc event.*\n**rush** _**›**_ *Rush kc event. The player who reaches the set kc number of the event wins.*\n\n:first_place:place 25m - :second_place:place 10m - :third_place:place 5m."
+          }
+        },
+        "addevent": {
+          "1": {
+            "name": "Additional information",
+            "value": "{}"
+          },
+          "2": {
+            "name": "Event commands",
+            "value": "*To register for the event, type the command* `.akc`\n*To update your KC manually, type the command* `.kcupdate`\n*To find out your rank, type the command* `.kcrank`\n*For a list of events this week, type the command* `.events`"
+          }
+        },
+        "stats": {
+          "1": {
+            "name": "{}",
+            "value": "{}"
+          },
+          "2": {
+            "name": "Additional information",
+            "value": "*Top list are updated every* _**60**_ *minutes*."
+          },
+          "3": {
+            "name": "Event commands",
+            "value": "*To see list of event top players, type* `.kcstats`\n*To find out your rank, type the command* `.kcrank`"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "data": {
+    "admin": 1,
+    "dc_bank": 1,
+    "kc_tracker": 1,
+    "organizer": 1,
+    "rsn_register": 0,
+    "server": 1,
+    "xp_tracker": 1,
+    "vote": 1
+  }
+}

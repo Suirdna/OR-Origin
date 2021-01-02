@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel = 'stylesheet' href = './style/style.css'/>
+	<link rel="icon" type="image/png" href="/favicon.png"/>
+	<title>Origin - Generator</title>
+	<script src="generator.js"></script>
+</head>
+<body onload="Auto();">
+	<div class = 'nav-bar'>
+		<ul>
+		  <li><a href="./setup.html">SETUP</a></li>
+		  <li><a href="./generator.html">GENERATOR</a></li>
+		</ul>
+	</div>
+	<div class = 'page-wrapper'>
+		<div class = 'header'>
+			<div class = 'logo'></div>
+		</div>
+		<div class = 'main'>
+			<form class = 'form_side' action="#">
+			  <select id="plugin" name="plugin" onchange="checkSafe(); setPlugin();">
+				<option value="plugin">Plugin</option>
+				<option value=".add">Organizer</option>
+				<option value=".addxpevent">XP_Tracker</option>
+				<option value=".addkcevent">KC_Tracker</option>
+			  </select>
+			  <select id="events" name="event_name">
+			  </select>
+			  <select id="mode" name="mode" onchange="checkSafe()">
+				<option value="mode">Mode</option>
+				<option value="standart">Standart</option>
+				<option value="rush">Rush</option>
+			  </select>
+			  <input type="text" id="target" name="target" value = "XP / KC" disabled>
+			  <select id="prize_count" name="prize_count" onchange="checkSafe()">
+				<option value="winner_count">Winner count</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			  </select>
+				<div class = "first_layer">
+					<label id="label1">START</label>
+					<input type="date" id="start_date" onchange="checkSafe()">
+					<input type="time" id="start_time" onchange="checkSafe()">
+				</div>
+				<div class = "second_layer">
+					<label id="label2">END</label>
+					<input type="date" id="end_date" onchange="checkSafe()">
+					<input type="time" id="end_time" onchange="checkSafe()">
+				</div>
+			</form>
+		</div>
+		<div class = 'bottom'>
+		<button id = 'copy' onclick="generateCommand()">
+		  <b id = 'copy_text'>COPY</b>
+		</button>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "data": {
+    "maNothing_KC_mod": {
+      "owner": "<@342716115706970112>",
+      "guild": [
+      ],
+      "commands": [
+        ".kc",
+        ".bosslist"
+      ]
+    }
+  }
+}

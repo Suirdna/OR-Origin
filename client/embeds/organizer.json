@@ -1,0 +1,20 @@
+{
+  "data": {
+    "LT":{
+      "organize": {
+        "1": {
+          "name": "Generatorius",
+          "value": "[Spausti čia.](https://origin.clan.su/generator.html)\n*Minutės ir metai neturi jokios reikšmės.*"
+        }
+      }
+    },
+    "EN":{
+      "organize": {
+        "1": {
+          "name": "Generator",
+          "value": "[Click here.](https://origin.clan.su/generator.html)\n*Minutes and years do not matter.*"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "data": {
+    "LT":{
+      "checkrsn": {
+        "1": {
+          "name": "Profilis",
+          "value": "_*DCN*_ _**›**_ {}"
+        },
+        "2": {
+          "name": "{}",
+          "value": "{}"
+        }
+      }
+    },
+    "EN":{
+      "checkrsn": {
+        "1": {
+          "name": "Profile",
+          "value": "_*DCN*_ _**›**_ {}"
+        },
+        "2": {
+          "name": "{}",
+          "value": "{}"
+        }
+      }
+    }
+  }
+}

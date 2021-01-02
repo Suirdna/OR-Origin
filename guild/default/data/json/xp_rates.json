@@ -1,0 +1,27 @@
+{
+  "data":[
+        {"attack": 200000},
+        {"strength": 200000},
+        {"defense": 400000},
+        {"ranged": 1000000},
+        {"prayer": 1600000},
+        {"magic": 350000},
+        {"runecrafting": 180000},
+        {"construction": 1000000},
+        {"hitpoints": 300000},
+        {"agility": 100000},
+        {"herblore": 450000},
+        {"thieving": 300000},
+        {"crafting": 440000},
+        {"fletching": 2500000},
+        {"slayer": 180000},
+        {"hunter": 285000},
+        {"mining": 140000},
+        {"smithing": 400000},
+        {"fishing": 120000},
+        {"cooking": 950000},
+        {"firemaking": 530000},
+        {"woodcutting": 200000},
+        {"farming": 300000}
+  ]
+}

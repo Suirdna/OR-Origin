@@ -1,0 +1,88 @@
+{
+  "data": {
+      "LT": {
+        "server": {
+          "1": {
+            "name": "{}",
+            "value": "*Savininkas _**›**_ {}*\n*Regionas* _**›**_ _**{}**_.\n*Narių* _**›**_ _**{}**_.\n*Nitro boostų* _**›**_ _**{}**_.\n*Sukurta* _**›**_ _**{}**_."
+          },
+          "2": {
+            "name": "Serverio boosteriai",
+            "value": "{}"
+          }
+        },
+        "join": {
+          "1": {
+            "name": "{} - Jus sveikina {}!",
+            "value": "*Dėkoju, kad prijungėte manę prie šio discordo serverio! Norint manimi naudotis, iš pradžių discordo serverio savininkas turi mane teisingai sukonfigutuoti. Tam, kad mane teisingai sukonfiguoti[paspauskite čia]({})*"
+          },
+          "2": {
+            "name": "Papildoma informacija",
+            "value": "Daugiau informacijos rasite parašę komandą `.about` `.help` `.admin` `.status`"
+          }
+        },
+        "about": {
+          "1": {
+            "name": "{} aprašymas \uD83D\uDCE1",
+            "value": "*Origin - tai discordo botas turintis platų funkcionalumą, kuris suteikia discordo administracijai organizuoti XP, KC, PVM, PK eventus ir turėti discordo serverio banko sąskaitą.*"
+          },
+          "2": {
+            "name": "Papildoma informacija \uD83D\uDCDD",
+            "value": "*Programuotojas* _**›**_ <@!{}>\n*Origin discordo nuoroda* _**›**_ [Spausti čia](https://discord.gg/HjVyBWu)\n*Origin prijungimo nuoroda* _**›**_ [spausti čia.]({})"
+          }
+        },
+        "private": {
+          "1": {
+            "name": "Privatus pluginai",
+            "value": "{}"
+          },
+          "2": {
+            "name": "Papildoma informacija",
+            "value": "Dėl privačių pluginų naudojimo, rašykite pluginų savininkams."
+          }
+        }
+      },
+    "EN": {
+      "server": {
+        "1": {
+          "name": "{}",
+          "value": "*Owner _**›**_ {}*\n*Region* _**›**_ _**{}**_.\n*Members* _**›**_ _**{}**_.\n*Nitro boosts* _**›**_ _**{}**_.\n*Created* _**›**_ _**{}**_."
+        },
+        "2": {
+          "name": "Server boosters",
+          "value": "{}"
+        }
+      },
+      "join": {
+          "1": {
+            "name": "{} - {} greets you!",
+            "value": "*Thank you for connecting me to this discord server! To use me, the owner of the discord server must first configure me correctly. To configure me correctly [click here.]({})*"
+          },
+          "2": {
+            "name": "Additional information",
+            "value": "For more information, type `.about` `.help` `.admin` `.status`"
+          }
+      },
+      "about": {
+        "1": {
+          "name": "{} description \uD83D\uDCE1",
+          "value": "*Origin is a discord bot with a wide range of functionality that allows the discord administration to organize XP, KC, PVM, PK events and have a discord server bank account.*"
+        },
+        "2": {
+          "name": "Additional information \uD83D\uDCDD",
+          "value": "*Developer* _**›**_ <@!{}>\n*Origin discord link* _**›**_ [Click here](https://discord.gg/DM2qZKuvn6)\n*Origin add link* _**›**_ [Click here]({})"
+        }
+      },
+      "private": {
+        "1": {
+          "name": "Private plugins",
+          "value": "{}"
+        },
+        "2": {
+          "name": "Additional information",
+          "value": "For the use of private plugins, write to the plugin owners."
+        }
+      }
+    }
+  }
+}

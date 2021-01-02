@@ -1,0 +1,92 @@
+{
+  "data": {
+    "LT": {
+      "bank": {
+        "1": {
+          "name": "{}",
+          "value": "*DCN _**›**_ {}*\n*Donation suma* _**›**_ {} _**{}**_ *gp*.\n*Sąskatos likutis* _**›**_ {} _**{}**_ *gp*."
+        },
+        "2": {
+          "name": "Papildoma informacija",
+          "value": "*Donate komanda* `.donate`\n*Jūs taip pat galite finansiškai padėti Origin bot kūrėjui [paspaudę čia.](https://www.patreon.com/origin_bot)*"
+        }
+      },
+      "banktop": {
+        "1": {
+          "name": "{}",
+          "value": "{}"
+        },
+        "2": {
+          "name": "Papildoma informacija",
+          "value": "*Norint sužinoti _**{}**_ banko sąskaitos likutį, rašykite komandą* `.dcbank`"
+        }
+      },
+      "dcbank": {
+        "1": {
+          "name": "{}",
+          "value": "*Sąskaitos likutis* _**›**_ {} _**{}**_ *gp*."
+        },
+        "2": {
+          "name": "Papildoma informacija",
+          "value": "*Norint sužinoti kur yra išleidžiami **{}** sponsorių gp, rašykite komandą* `.recipe`"
+        }
+      },
+      "recipe": {
+        "1": {
+          "name": "{}",
+          "value": "{}"
+        }
+      },
+      "bankdata": {
+        "1": {
+          "name": "{}",
+          "value": "*DCN* _**›**_ {}\n*Donation suma* _**›**_ {} _**{}**_ *gp.*\n*Sąskatos likutis* _**›**_ {} _**{}**_ *gp.*"
+        }
+      }
+    },
+  "EN": {
+      "bank": {
+        "1": {
+          "name": "{}",
+          "value": "*DCN _**›**_ {}*\n*Donation sum* _**›**_ {} _**{}**_ *gp*.\n*Account balance* _**›**_ {} _**{}**_ *gp*."
+        },
+        "2": {
+          "name": "Additional information",
+          "value": "*Donate command* `.donate`\n*You can also financially help the Origin bot developer [click here.](https://www.patreon.com/origin_bot)*"
+        }
+      },
+      "banktop": {
+        "1": {
+          "name": "{}",
+          "value": "{}"
+        },
+        "2": {
+          "name": "Additional information",
+          "value": "*To find out the balance of* _**{}**_ *bank account, write the command* `.dcbank`"
+        }
+      },
+      "dcbank": {
+        "1": {
+          "name": "{}",
+          "value": "*Account balance* _**›**_ {} _**{}**_ *gp*."
+        },
+        "2": {
+          "name": "Additional information",
+          "value": "*To find out where* _**{}**_ *sponsor gp is used, write the command* `.recipe`"
+        }
+      },
+      "recipe": {
+        "1": {
+          "name": "{}",
+          "value": "{}"
+        }
+      },
+      "bankdata": {
+        "1": {
+          "name": "{}",
+          "value": "*DCN* _**›**_ {}\n*Donation sum* _**›**_ {} _**{}**_ *gp.*\n*Account balance* _**›**_ {} _**{}**_ *gp.*"
+        }
+      }
+    }
+  }
+}

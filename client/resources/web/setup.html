@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel = 'stylesheet' href = './style/style.css'/>
+	<link rel="icon" type="image/png" href="/favicon.png"/>
+	<title>Origin - Setup</title>
+	<script src="setup.js"></script>
+</head>
+<body onload="Auto();">
+	<div class = 'nav-bar'>
+		<ul>
+		  <li><a href="./setup.html">SETUP</a></li>
+		  <li><a href="./generator.html">GENERATOR</a></li>
+		</ul>
+	</div>
+	<div class = 'page-wrapper'>
+		<div class = 'header'>
+			<div class = 'logo'></div>
+		</div>
+		<div class = 'main'>
+			<p class = 'tut_1'>Please select a discord server language and region.</p>
+			<form class = 'form_side' action="#">
+			  <select id="language" name="language">
+				<option value="EN">English</option>
+				<option value="LT">Lietuvių</option>
+			  </select>
+			  <select id="region" name="region">
+			  </select>
+			</form>
+			<div id = 'message_block'>
+				<p class = 'tut_1'>Now please paste the command to your discord server and press enter.</p>
+				<img src = './images/tut_1.gif' class = 'tut_gif'></img>
+			</div> 
+		</div>
+		<div class = 'bottom'>
+		<button id = 'copy' onclick="generateCommand()">
+		  <b id = 'copy_text'>COPY</b>
+		</button>
+		</div>
+	</div>
+</body>
+</html>
