@@ -299,7 +299,7 @@ class preprocessor(commands.Cog):
                                 guild_t = await origin.get_region(guild.id)
                                 client_message = 'Guild id: {} | Event: {} | Status: {}'.format(guild.id, value['event_name'], 'In Registration progress')
                                 await console_interface.console_message('START_PVM_EVENT', client_message)
-                                message = l.organizer[guild_l]['msg_post_2'].format(value['time_start'], USER.name if USER else 'Administrator', value['event_name'], server_config['events'])
+                                message = l.organizer[guild_l]['msg_post_3'].format(value['time_start'], USER.name if USER else 'Administrator', value['event_name'], server_config['events'])
                                 new_time = await server_timer.get_timedelta(hours=int(ini['NOTIFICATION_TIMER']['HOURS']), region=guild_t)
 
                                 if not self.GUILD_EVENT_NOTIFICATION_TIMER:
