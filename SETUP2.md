@@ -5,7 +5,7 @@
 	- <b>Line 34 and 38</b> | Add your bot application id [bot user id] | CLIENT_ID = 747076703297339423
 	- <b>Line 35 and 39</b> | Add your bot application token | CLIENT_TOKEN = 'fdjFG6F5V98DF5df5FDG5SD5VD2DFDVG5DFGD2'<br><br>
 - Save file <b>.\OR-Origin\client\config\config.py</b> <br>
-- Open <b>start.bat</b> file that located in directory <b>.\OR-Origin\start.bat<b>
+- Open <b>start.bat</b> file that located in directory <b>.\OR-Origin\start.bat</b>
 - Invite Origin bot to you discord server.
 
 Have fun
