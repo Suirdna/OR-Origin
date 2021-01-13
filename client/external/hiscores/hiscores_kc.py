@@ -6,7 +6,7 @@ class Hiscores2V(object):
 	response = None
 	status = None
 	errorMsg = None
-	counter = 94
+	counter = 96
 	data = None
 
 	bossList = {'data': []}
