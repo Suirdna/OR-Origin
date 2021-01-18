@@ -167,13 +167,13 @@ class datastream(threading.Thread):
                         if value['type'] == 3 and value['status'] == 1:
                             if guild_current.month == int(value['date_start'][:2]):
                                 if guild_current.day == int(value['date_start'][3:]):
-                                    if guild_current.hour <= value['time_start'] + 6:
+                                    if value['time_start'] + 1 >= guild_current.hour and value['time_start'] + 1 <= guild_current.hour + 5:
                                         self.event_start(guild, value, c.MODE_NAME['std'])
 
                         if value['type'] == 3 and value['status'] == 1:
                             if guild_current.month == int(value['date_end'][:2]):
                                 if guild_current.day == int(value['date_end'][3:]):
-                                    if guild_current.hour + 1 <= value['time_end']:
+                                    if guild_current.hour <= value['time_end'] - 1:
                                         self.event_in_progress(guild, value, c.MODE_NAME['std'])
 
                         if value['type'] == 4 and value['status'] == 1:
