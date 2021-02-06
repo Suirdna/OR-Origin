@@ -299,7 +299,7 @@ class preprocessor(commands.Cog):
                                 guild_t = await origin.get_region(guild.id)
                                 client_message = 'Guild id: {} | Event: {} | Status: {}'.format(guild.id, value['event_name'], 'In Registration progress')
                                 await console_interface.console_message('START_PVM_EVENT', client_message)
-                                message = l.organizer[guild_l]['msg_post_3'].format(value['time_start'], USER.name if USER else 'Administrator', value['event_name'], server_config['events'])
+                                message = l.organizer[guild_l]['msg_post_2'].format(value['time_start'], USER.name if USER else 'Administrator', value['event_name'], server_config['events'])
                                 new_time = await server_timer.get_timedelta(hours=int(ini['NOTIFICATION_TIMER']['HOURS']), region=guild_t)
 
                                 if not self.GUILD_EVENT_NOTIFICATION_TIMER:
@@ -846,7 +846,6 @@ class preprocessor(commands.Cog):
 
             if not AUTO_NOTIFICATION_STATUS:
                 guild_l = await origin.get_language(guild.id)
-                self.GUILD_KC_EVENT_TIMER.append({'guild_id': guild, 'time': current.hour})
 
                 path1 = c.GUILD_PATH['{}.ini'.format(kc_tracker.kc_tracker.name)].format(guild.id)
                 path2 = c.GUILD_PATH['event.json'].format(guild.id)
