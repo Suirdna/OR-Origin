@@ -1106,7 +1106,7 @@ class preprocessor(commands.Cog):
                                 if current.hour >= value['time_start'] and value['status'] == 0:
                                     await json_manager.update(path2, 'id', value['id'], 'status', 1)
                                     await asyncio.gather(self.start_kc_event(value['event_name'], value['date_start'], value['time_start'], guild.id))
-                                    client_message = 'Guild id: {} | Guild time: {} | Event: {} | Mode: {} | Status: {}'.format(guild.id, current.strftime('%H:%M'), value['event_name'], c.MODE_NAME['std'] if value['type'] == 1 else c.MODE_NAME['rush'], 'Started')
+                                    client_message = 'Guild id: {} | Guild time: {} | Event: {} | Mode: {} | Status: {}'.format(guild.id, current.strftime('%H:%M'), value['event_name'], c.MODE_NAME['std'] if value['type'] == 3 else c.MODE_NAME['rush'], 'Started')
                                     await console_interface.console_message('START_KC_EVENT', client_message)
 
                                     if CHANNEL_PERMISSIONS == 1:
@@ -1156,7 +1156,7 @@ class preprocessor(commands.Cog):
                                 continue
 
                         if value['type'] >= 3 and value['status'] == 0:
-                            client_message = 'Guild id: {} | Guild time: {} | Event: {} | Mode: {} | Status: {}'.format(guild.id, current.strftime('%H:%M'), value['event_name'], c.MODE_NAME['std'] if value['type'] == 1 else c.MODE_NAME['rush'], 'In registration progress')
+                            client_message = 'Guild id: {} | Guild time: {} | Event: {} | Mode: {} | Status: {}'.format(guild.id, current.strftime('%H:%M'), value['event_name'], c.MODE_NAME['std'] if value['type'] == 3 else c.MODE_NAME['rush'], 'In registration progress')
                             await console_interface.console_message('REGISTRATION_KC_EVENT', client_message)
 
                             message = l.kc_tracker[guild_l]['msg_post_6'].format(str(value['event_name']).capitalize(), server_config['events'])
@@ -1185,7 +1185,7 @@ class preprocessor(commands.Cog):
                                         await self.time_saver(guild.id, new_time.year, new_time.month, new_time.day, new_time.hour, 'kc_tracker')
 
                         if value['type'] >= 3 and value['status'] == 1:
-                            client_message = 'Guild id: {} | Guild time: {} | Event: {} | Mode: {} | Status: {}'.format(guild.id, current.strftime('%H:%M'), value['event_name'], c.MODE_NAME['std'] if value['type'] == 1 else c.MODE_NAME['rush'], 'In collection data progress')
+                            client_message = 'Guild id: {} | Guild time: {} | Event: {} | Mode: {} | Status: {}'.format(guild.id, current.strftime('%H:%M'), value['event_name'], c.MODE_NAME['std'] if value['type'] == 3 else c.MODE_NAME['rush'], 'In collection data progress')
                             await console_interface.console_message('COLLECTION_KC_EVENT', client_message)
                             await asyncio.gather(self.autostats_kc(guild))
 
