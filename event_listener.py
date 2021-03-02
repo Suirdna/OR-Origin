@@ -28,6 +28,13 @@ class event_listener(commands.Cog):
     def __init__(self, client):
         self.client = client
         self.status_update.start()
+        
+    @commands.Cog.listener()
+    async def on_message(self, payload):
+        try:
+            await listener.message(message, self.client)
+        except Exception as error:
+            await exception.error(error)
 
     @commands.Cog.listener()
     async def on_raw_reaction_add(self, payload):
