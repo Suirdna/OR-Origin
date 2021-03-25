@@ -20,7 +20,7 @@ let KC_EVENTS = ["Abyssal Sire", "Alchemical Hydra", "Barrows Chests", "Bryophyt
 "Corporeal Beast", "Crazy Archaeologist", "Dagannoth Prime", "Dagannoth Rex", "Dagannoth Supreme",
 "Deranged Archaeologist", "General Graardor", "Giant Mole", "Grotesque Guardians", "Hespori", "Kalphite Queen",
 "King Black Dragon", "Kraken", "Kree'Arra", "K'ril Tsutsaroth", "Mimic", "Nightmare",
-"Obor", "Sarachnis", "Scorpia", "Skotizo", "The Gauntlet", "The Corrupted Gauntlet", "Theatre of Blood",
+"Obor", "Sarachnis", "Scorpia", "Skotizo", "Tempoross" , "The Gauntlet", "The Corrupted Gauntlet", "Theatre of Blood",
 "Thermonuclear Smoke Devil", "TzKal-Zuk", "TzTok-Jad", "Venenatis", "Vet'ion", "Vorkath", "Wintertodt",
 "Zalcano", "Zulrah"
 ];
@@ -28,7 +28,7 @@ let KC_EVENTS = ["Abyssal Sire", "Alchemical Hydra", "Barrows Chests", "Bryophyt
 let PRE_KC_EVENT = ["sire", "hydra", "barrows", "bryo", "call", "cerb", "cox", "cm", "chaosele",
 "chaosfan", "sara", "corp", "crazyarch", "prime", "rex", "supreme", "derarch", "bandos", "mole",
 "gargs", "hespori", "kq", "kbd", "kraken", "arma", "zammy", "mimic", "nm", "obor", "sarachnis",
-"scorpia", "skotizo", "gaunt", "corrugaunt", "tob", "smokedevil", "zuk", "jad", "vene", "vetion",
+"scorpia", "skotizo", "temp", "gaunt", "corrugaunt", "tob", "smokedevil", "zuk", "jad", "vene", "vetion",
 "vork", "wt", "zalca", "zulrah"
 ];
 	 
