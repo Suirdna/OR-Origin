@@ -59,7 +59,7 @@ class Hiscores2V(object):
 
 		self.bossList['data'].clear()
 
-		while index < 44:
+		while index < 45:
 			self.bossList['data'].append({'rank': 0 if int(self.data[indexx - 1]) == -1 else int(self.data[indexx - 1]), 'boss': boss[index], 'pre': pre[index], 'kc': 0 if int(self.data[indexx]) == -1 else self.data[indexx]})
 			index += 1
 			indexx += 2
