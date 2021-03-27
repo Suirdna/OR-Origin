@@ -580,38 +580,30 @@ class preprocessor(commands.Cog):
                 DATA = await json_manager.get_data(path1)
 
                 guild_current = await server_timer.get_current_time(guild_t)
-                STATUS = False
                 COUNTER = 0
+                
+                if DATA:
+                    for data in DATA:
+                        CHECK = True
+                        USERNAME = data['user_rsn']
+                        USERNAME = USERNAME.replace(' ', '%20')
+                        while CHECK:
+                            USER = hiscores_xp.Hiscores(USERNAME, 'N')
+                            if hasattr(USER, 'stats'):
+                                CHECK = False
+                                target_keys = ['{}_current'.format(event_name)]
+                                target_values = [USER.stats[event_name]['experience']]
+                                await json_manager.update(path1, 'user_rsn', data['user_rsn'], target_keys, target_values)
 
-                if mode == c.MODE_NAME['std']:
-                    if date_end == guild_current.strftime('%m.%d') and time_end == guild_current.hour:
-                        STATUS = True
-                elif mode == c.MODE_NAME['rush']:
-                    STATUS = True
-
-                if STATUS:
-                    if DATA:
-                        for data in DATA:
-                            CHECK = True
-                            USERNAME = data['user_rsn']
-                            USERNAME = USERNAME.replace(' ', '%20')
-                            while CHECK:
-                                USER = hiscores_xp.Hiscores(USERNAME, 'N')
-                                if hasattr(USER, 'stats'):
+                                client_message = 'Guild id: {} | Guild time: {} | Event: {} | Rsn: {} | Registration XP: {} | Current XP: {} | Status: {}'.format(guild_id, guild_current.strftime('%H:%M'), event_name, data['user_rsn'], data[event_name], data['{}_current'.format(event_name)], 'Last XP update')
+                                await console_interface.console_message('START_LAST_XP_EVENT_CHECK', client_message)
+                                await logger.log_event(guild_id, 'xp_tracker', c.CLIENT_MESSAGES['xp_tracker_update'], client_message)
+                            else:
+                                if COUNTER >= 10:
                                     CHECK = False
-                                    target_keys = ['{}_current'.format(event_name)]
-                                    target_values = [USER.stats[event_name]['experience']]
-                                    await json_manager.update(path1, 'user_rsn', data['user_rsn'], target_keys, target_values)
-
-                                    client_message = 'Guild id: {} | Guild time: {} | Event: {} | Rsn: {} | Registration XP: {} | Current XP: {} | Status: {}'.format(guild_id, guild_current.strftime('%H:%M'), event_name, data['user_rsn'], data[event_name], data['{}_current'.format(event_name)], 'Last XP update')
-                                    await console_interface.console_message('START_LAST_XP_EVENT_CHECK', client_message)
-                                    await logger.log_event(guild_id, 'xp_tracker', c.CLIENT_MESSAGES['xp_tracker_update'], client_message)
+                                    COUNTER = 0
                                 else:
-                                    if COUNTER >= 10:
-                                        CHECK = False
-                                        COUNTER = 0
-                                    else:
-                                        COUNTER += 1
+                                    COUNTER += 1
 
                 guild = await discord_manager.get_server(self.client, guild_id)
                 await asyncio.gather(self.autostats_xp(guild))
