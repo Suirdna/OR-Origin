@@ -308,7 +308,7 @@ class preprocessor(commands.Cog):
                                     STATUS_A = False
                                     for index, data in enumerate(self.GUILD_EVENT_NOTIFICATION_TIMER):
                                         if data['guild'] == guild.id:
-                                            if current.year >= data['year'] and current.month >= data['month'] and current.day >= data['day'] and current.hour >= data['hour']:
+                                            if current.year >= data['year'] and current.month >= data['month'] and current.day >= data['day'] and current.hour <= data['hour']:
                                                 if CHANNEL_PERMISSIONS == 1:
                                                     if CHANNEL1:
                                                         await self.notificator(CHANNEL1, message)
@@ -694,7 +694,7 @@ class preprocessor(commands.Cog):
                                 STATUS_X = False
                                 for index, data in enumerate(self.GUILD_XP_EVENT_NOTIFICATION_TIMER):
                                     if data['guild'] == guild.id:
-                                        if current.year >= data['year'] and current.month >= data['month'] and current.day >= data['day'] and current.hour >= data['hour']:
+                                        if current.year >= data['year'] and current.month >= data['month'] and current.day >= data['day'] and current.hour <= data['hour']:
                                             if CHANNEL_PERMISSIONS == 1:
                                                 if CHANNEL1:
                                                     await self.notificator(CHANNEL1, message)
@@ -1152,7 +1152,7 @@ class preprocessor(commands.Cog):
                                 STATUS_X = False
                                 for index, data in enumerate(self.GUILD_KC_EVENT_NOTIFICATION_TIMER):
                                     if data['guild'] == guild.id:
-                                        if current.year >= data['year'] and current.month >= data['month'] and current.day >= data['day'] and current.hour >= data['hour']:
+                                        if current.year >= data['year'] and current.month >= data['month'] and current.day >= data['day'] and current.hour <= data['hour']:
                                             if CHANNEL_PERMISSIONS == 1:
                                                 if CHANNEL1:
                                                     await self.notificator(CHANNEL1, message)
