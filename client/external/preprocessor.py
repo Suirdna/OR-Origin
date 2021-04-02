@@ -282,7 +282,7 @@ class preprocessor(commands.Cog):
 
                     if current.month >= int(value['date_start'][:2]):
                         if current.day >= int(value['date_start'][3:]):
-                            if ((current.month > int(value['date_start'][:2]) and current.day >= int(value['date_start'][3:])) or current.hour >= value['time_start']) and value['type'] == 0 and value['status'] == 0:
+                            if ((current.month > int(value['date_start'][:2]) and current.day >= int(value['date_start'][3:])) or current.hour == value['time_start'] - 1) and value['type'] == 0 and value['status'] == 0:
                                 client_message = 'Guild id: {} | Event: {} | Status: {}'.format(guild.id, value['event_name'], 'In Last Hour progress')
                                 await console_interface.console_message('START_PVM_EVENT', client_message)
                                 if CHANNEL_PERMISSIONS == 1:
@@ -474,7 +474,8 @@ class preprocessor(commands.Cog):
                                                     role = await discord_manager.get_role(self.client, guild.id, int(WINNER_ROLE))
 
                                                     if index == 1 and member and role:
-                                                        await member.add_roles(role, reason='{}'.format(c.DISCORD_MESSAGES['xp_event_winner']), atomic=True)
+                                                        if member.top_role.position < role.position:
+                                                            await member.add_roles(role, reason='{}'.format(c.DISCORD_MESSAGES['xp_event_winner']), atomic=True)
                                                         EMBED_TEXT += '{}\n'.format(l.xp_tracker[guild_l]['extra_1'].format(EVENT_NAME.capitalize(), member.mention if member else data['user_id']))
                                                     elif int(data1['prize_count']) >= index and member:
                                                         EMBED_TEXT += '{}\n'.format(l.xp_tracker[guild_l]['extra_2'].format(EVENT_NAME.capitalize(), member.mention if member else data['user_id']))
@@ -930,7 +931,8 @@ class preprocessor(commands.Cog):
                                                     role = await discord_manager.get_role(self.client, guild.id, int(WINNER_ROLE))
 
                                                     if index == 1 and member and role:
-                                                        await member.add_roles(role, reason='{}'.format(c.DISCORD_MESSAGES['kc_event_winner']), atomic=True)
+                                                        if member.top_role.position < role.position:
+                                                            await member.add_roles(role, reason='{}'.format(c.DISCORD_MESSAGES['kc_event_winner']), atomic=True)
                                                         EMBED_TEXT += '{}\n'.format(l.kc_tracker[guild_l]['extra_1'].format(EVENT_NAME.capitalize(), member.mention if member else data['user_id']))
                                                     elif int(data1['prize_count']) >= index and member:
                                                         EMBED_TEXT += '{}\n'.format(l.kc_tracker[guild_l]['extra_2'].format(EVENT_NAME.capitalize(), member.mention if member else data['user_id']))
