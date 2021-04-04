@@ -37,7 +37,7 @@ class datastream(threading.Thread):
         try:
             guild_t = origin.get_region(guild)
             path1 = c.GUILD_PATH['kc_tracker.json'].format(guild)
-            path2 = c.GUILD_PATH['kc_tracker.ini'].format(guild)
+            path2 = c.GUILD_PATH['kc_tracker_g.ini']
 
             LIST1 = json_manager.get_ini_list(path2, 'CONSTANT1', 'NAME')
             LIST2 = json_manager.get_ini_list(path2, 'CONSTANT2', 'PRE')
@@ -80,7 +80,7 @@ class datastream(threading.Thread):
             guild_t = origin.get_region(guild)
             path1 = c.GUILD_PATH['kc_tracker.json'].format(guild)
             path2 = c.GUILD_PATH['kc_rates.json'].format(guild)
-            path3 = c.GUILD_PATH['kc_tracker.ini'].format(guild)
+            path2 = c.GUILD_PATH['kc_tracker_g.ini']
 
             DATA1 = json_manager.get_data(path1)
             DATA2 = json_manager.get_data(path2)
@@ -88,7 +88,7 @@ class datastream(threading.Thread):
             LIST1 = json_manager.get_ini_list(path3, 'CONSTANT1', 'NAME')
             LIST2 = json_manager.get_ini_list(path3, 'CONSTANT2', 'PRE')
 
-            current = server_timer.get_current_time(region=guild_t)
+            current = server_timer.get_current_time(guild_t)
             COUNTER = 0
             USER = None
             for data in DATA1:
@@ -160,7 +160,7 @@ class datastream(threading.Thread):
                 guild_t = origin.get_region(guild)
                 path2 = c.GUILD_PATH['event.json'].format(guild)
                 LIST1 = json_manager.get_data(path2)
-                guild_current = server_timer.get_current_time(region=guild_t)
+                guild_current = server_timer.get_current_time(guild_t)
 
                 if LIST1:
                     for value in LIST1:
@@ -182,5 +182,6 @@ class datastream(threading.Thread):
                                     self.event_in_progress(guild, value, c.MODE_NAME['rush'])
 
                 time.sleep(60*10)
+                
         except Exception as error:
             exception.error(error)

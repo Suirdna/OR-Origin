@@ -1242,7 +1242,7 @@ class preprocessor(commands.Cog):
                                     STATUS_EVENT = True
 
                             for server in self.LIST_OF_SERVERS_KC_TRACKER:
-                                if guild.id == server:
+                                if server == guild.id:
                                     STATUS = True
 
                             if STATUS:
