@@ -163,7 +163,7 @@ class datastream(threading.Thread):
                         if value['type'] == 1 and value['status'] == 1:
                             if guild_current.month == int(value['date_end'][:2]):
                                 if guild_current.day == int(value['date_end'][3:]):
-                                    if guild_current.hour + 6 >= value['time_end'] and guild_current.hour <= value['time_end'] - 1:
+                                    if guild_current.hour + 6 >= value['time_end'] and guild_current.hour < value['time_end'] - 1:
                                         self.event_in_progress(guild, value, c.MODE_NAME['std'])
 
                         if value['type'] == 2 and value['status'] == 1:
