@@ -648,7 +648,6 @@ class preprocessor(commands.Cog):
                             if current.month >= int(value['date_end'][:2]):
                                 if current.day >= int(value['date_end'][3:]):
                                     if current.hour >= value['time_end']:
-                                        await json_manager.update(path2, 'id', value['id'], 'status', 2)
                                         await asyncio.gather(self.end_xp_event(value['event_name'], value['date_end'], value['time_end'], guild.id, c.MODE_NAME['std']))
                                         client_message = 'Guild id: {} | Guild time: {} | Event: {} | Mode: {} | Status: {}'.format(guild.id, current.strftime('%H:%M'), value['event_name'], c.MODE_NAME['std'], 'Ended')
                                         await console_interface.console_message('END_XP_EVENT', client_message)
@@ -658,6 +657,7 @@ class preprocessor(commands.Cog):
                                                 await CHANNEL1.send(l.xp_tracker[guild_l]['msg_post_5'].format(str(value['event_name']).capitalize(), server_config['xp_event']))
                                         if CHANNEL2:
                                             await CHANNEL2.send(l.xp_tracker[guild_l]['msg_post_5'].format(str(value['event_name']).capitalize(), server_config['xp_event']))
+                                        await json_manager.update(path2, 'id', value['id'], 'status', 2)
                                         continue
                         elif value['type'] == 2 and value['status'] == 1:
                             path3 = c.GUILD_PATH['tracker.json'].format(guild.id)
@@ -670,7 +670,6 @@ class preprocessor(commands.Cog):
                                     COUNTER += 1
 
                             if COUNTER >= value['prize_count']:
-                                await json_manager.update(path2, 'id', value['id'], 'status', 2)
                                 await asyncio.gather(self.end_xp_event(value['event_name'], value['date_end'], value['time_end'], guild.id, c.MODE_NAME['rush']))
                                 client_message = 'Guild id: {} | Guild time: {} | Event: {} | Mode: {} | Status: {}'.format(guild.id, current.strftime('%H:%M'), value['event_name'], c.MODE_NAME['rush'], 'Ended')
                                 await console_interface.console_message('END_XP_EVENT', client_message)
@@ -680,6 +679,8 @@ class preprocessor(commands.Cog):
                                         await CHANNEL1.send(l.xp_tracker[guild_l]['msg_post_5'].format(str(value['event_name']).capitalize(), server_config['xp_event']))
                                 if CHANNEL2:
                                     await CHANNEL2.send(l.xp_tracker[guild_l]['msg_post_5'].format(str(value['event_name']).capitalize(), server_config['xp_event']))
+                                
+                                await json_manager.update(path2, 'id', value['id'], 'status', 2)
                                 continue
 
                         if value['type'] >= 1 and value['status'] == 0:
@@ -1106,7 +1107,6 @@ class preprocessor(commands.Cog):
                             if current.month >= int(value['date_end'][:2]):
                                 if current.day >= int(value['date_end'][3:]):
                                     if current.hour >= value['time_end']:
-                                        await json_manager.update(path2, 'id', value['id'], 'status', 2)
                                         await asyncio.gather(self.end_kc_event(value['event_name'], value['date_end'], value['time_end'], guild.id, c.MODE_NAME['std']))
                                         client_message = 'Guild id: {} | Guild time: {} | Event: {} | Mode: {} | Status: {}'.format(guild.id, current.strftime('%H:%M'), value['event_name'], c.MODE_NAME['std'], 'Ended')
                                         await console_interface.console_message('END_KC_EVENT', client_message)
@@ -1116,6 +1116,7 @@ class preprocessor(commands.Cog):
                                                 await CHANNEL1.send(l.kc_tracker[guild_l]['msg_post_5'].format(str(value['event_name']).capitalize(), server_config['kc_event']))
                                         if CHANNEL2:
                                             await CHANNEL2.send(l.kc_tracker[guild_l]['msg_post_5'].format(str(value['event_name']).capitalize(), server_config['kc_event']))
+                                        await json_manager.update(path2, 'id', value['id'], 'status', 2)
                                         continue
                         elif value['type'] == 4 and value['status'] == 1:
                             path3 = c.GUILD_PATH['tracker.json'].format(guild.id)
@@ -1129,7 +1130,6 @@ class preprocessor(commands.Cog):
                                         COUNTER += 1
 
                             if COUNTER >= value['prize_count']:
-                                await json_manager.update(path2, 'id', value['id'], 'status', 2)
                                 await asyncio.gather(self.end_kc_event(value['event_name'], value['date_end'], value['time_end'], guild.id, c.MODE_NAME['rush']))
                                 client_message = 'Guild id: {} | Guild time: {} | Event: {} | Mode: {} | Status: {}'.format(guild.id, current.strftime('%H:%M'), value['event_name'], c.MODE_NAME['rush'], 'Ended')
                                 await console_interface.console_message('END_KC_EVENT', client_message)
@@ -1139,6 +1139,7 @@ class preprocessor(commands.Cog):
                                         await CHANNEL1.send(l.kc_tracker[guild_l]['msg_post_5'].format(str(value['event_name']).capitalize(), server_config['kc_event']))
                                 if CHANNEL2:
                                     await CHANNEL2.send(l.kc_tracker[guild_l]['msg_post_5'].format(str(value['event_name']).capitalize(), server_config['kc_event']))
+                                await json_manager.update(path2, 'id', value['id'], 'status', 2)
                                 continue
 
                         if value['type'] >= 3 and value['status'] == 0:
