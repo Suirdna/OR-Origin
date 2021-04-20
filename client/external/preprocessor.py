@@ -469,13 +469,14 @@ class preprocessor(commands.Cog):
                                                 STRING += l.xp_tracker[guild_l]['configuration']['current_xp'].format(title, data['user_username'], data['user_rsn'], locale.format_string('%d', data['sum'], grouping=True))
                                                 SUM += data['sum']
 
-                                                if data1['status'] == 2 and data1['prize_count'] >= index and data1['win_message'] == 0:
+                                                if data1['status'] == 1 and data1['prize_count'] >= index and data1['win_message'] == 0:
                                                     member = await discord_manager.get_member(self.client, guild.id, data['user_id'])
                                                     role = await discord_manager.get_role(self.client, guild.id, int(WINNER_ROLE))
 
                                                     if index == 1 and member and role:
                                                         if member.top_role.position < role.position:
                                                             await member.add_roles(role, reason='{}'.format(c.DISCORD_MESSAGES['xp_event_winner']), atomic=True)
+                                                        
                                                         EMBED_TEXT += '{}\n'.format(l.xp_tracker[guild_l]['extra_1'].format(EVENT_NAME.capitalize(), member.mention if member else data['user_id']))
                                                     elif int(data1['prize_count']) >= index and member:
                                                         EMBED_TEXT += '{}\n'.format(l.xp_tracker[guild_l]['extra_2'].format(EVENT_NAME.capitalize(), member.mention if member else data['user_id']))
@@ -927,13 +928,14 @@ class preprocessor(commands.Cog):
                                                 STRING += l.kc_tracker[guild_l]['configuration']['current_kc'].format(title, data['user_username'], data['user_rsn'], locale.format_string('%d', data['sum'], grouping=True))
                                                 SUM += data['sum']
 
-                                                if data1['status'] == 2 and data1['prize_count'] >= index and data1['win_message'] == 0:
+                                                if data1['status'] == 1 and data1['prize_count'] >= index and data1['win_message'] == 0:
                                                     member = await discord_manager.get_member(self.client, guild.id, data['user_id'])
                                                     role = await discord_manager.get_role(self.client, guild.id, int(WINNER_ROLE))
-
+                                                    
                                                     if index == 1 and member and role:
                                                         if member.top_role.position < role.position:
                                                             await member.add_roles(role, reason='{}'.format(c.DISCORD_MESSAGES['kc_event_winner']), atomic=True)
+                                                        
                                                         EMBED_TEXT += '{}\n'.format(l.kc_tracker[guild_l]['extra_1'].format(EVENT_NAME.capitalize(), member.mention if member else data['user_id']))
                                                     elif int(data1['prize_count']) >= index and member:
                                                         EMBED_TEXT += '{}\n'.format(l.kc_tracker[guild_l]['extra_2'].format(EVENT_NAME.capitalize(), member.mention if member else data['user_id']))
@@ -1309,10 +1311,10 @@ class preprocessor(commands.Cog):
                 if (1 <= value1['type'] <= 4) and value1['status'] == 2:
                     NEW_LIST['data'].append(value1)
 
-                    if value1['type'] == 1 or value1['type'] == 2:
+                    if value1['type'] == 1 or value1['type'] == 2 and value1['win_message'] == 1:
                         XP_EVENT_END_COUNTER += 1
 
-                    if value1['type'] == 3 or value1['type'] == 4:
+                    if value1['type'] == 3 or value1['type'] == 4 and value1['win_message'] == 1:
                         KC_EVENT_END_COUNTER += 1
 
             await json_manager.clear_and_update(path, NEW_LIST)
