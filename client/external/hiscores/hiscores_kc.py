@@ -6,7 +6,7 @@ class Hiscores2V(object):
 	response = None
 	status = None
 	errorMsg = None
-	counter = 98
+	counter = 96 #constant
 	data = None
 
 	bossList = {'data': []}
@@ -59,7 +59,7 @@ class Hiscores2V(object):
 
 		self.bossList['data'].clear()
 
-		while index < 45:
+		while index < 46:
 			self.bossList['data'].append({'rank': 0 if int(self.data[indexx - 1]) == -1 else int(self.data[indexx - 1]), 'boss': boss[index], 'pre': pre[index], 'kc': 0 if int(self.data[indexx]) == -1 else self.data[indexx]})
 			index += 1
 			indexx += 2
